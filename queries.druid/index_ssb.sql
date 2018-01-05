@@ -12,7 +12,6 @@ set hive.druid.passiveWaitTimeMs=180000;
 CREATE TABLE ssb_druid
 STORED BY 'org.apache.hadoop.hive.druid.DruidStorageHandler'
 TBLPROPERTIES (
-  "druid.datasource" = "ssb_druid",
   "druid.segment.granularity" = "MONTH",
   "druid.query.granularity" = "DAY")
 AS
